@@ -1,23 +1,26 @@
 
 import React from 'react';
-import '../styles/App.scss';
+import './item-container.scss';
+import { withRouter } from 'react-router';
+
 
 
 
 const Itemcontainer = (props) => {
 
-    
+
     return (
 
 
-        <div  style= {{backgroundImage: `url( ${props.url} )`}} class="item-container">
-            <div   class="item" >
-                <h3 class="title">{props.title}</h3>
-                <span class="buy-now">Buy Now</span>
+        <div  class="item-container" onClick={()=> props.history.push(`${props.match.url}${'collection/'}${props.title}`)}>
+            <div style={{ backgroundImage: `url( ${props.url} )` }} class="background-image"></div>
+            <div class="item" >
+                <h3 class="title">{props.title.toUpperCase()}</h3>
+                <span class="subtitle">Buy Now</span>
             </div>
         </div>
     )
 
 }
 
-export default Itemcontainer
+export default  withRouter(Itemcontainer);

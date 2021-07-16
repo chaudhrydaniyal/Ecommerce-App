@@ -1,13 +1,13 @@
 import React from 'react';
-import reactDom from 'react-dom';
+import { withRouter } from 'react-router';
 import Itemcontainer from '../components/item-container';
 import './homepage.scss'
 
 
 
 class Homepage extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state={
       sections: [
@@ -46,11 +46,14 @@ class Homepage extends React.Component {
     }
   }
   render() {
+    console.log(this.props.history);
+
     return (
 
       <div class="homepage">
+     
 
-        {this.state.sections.map ((section) => ( <Itemcontainer title= {section.title} url={section.url}></Itemcontainer>) )}
+        {this.state.sections.map ((section) => ( <Itemcontainer  title= {section.title} url={section.url}></Itemcontainer>) )}
 
         
 
@@ -61,4 +64,4 @@ class Homepage extends React.Component {
 
 
 
-export default Homepage
+export default withRouter(Homepage);
