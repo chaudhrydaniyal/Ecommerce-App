@@ -1,4 +1,4 @@
-import React, { Reactcom } from 'react';
+import React from 'react';
 import './collection.scss'
 
 

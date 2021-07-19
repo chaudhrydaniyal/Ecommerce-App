@@ -1,0 +1,133 @@
+$sub-color: grey;
+$main-color: black;
+
+@mixin shrinkLabel {
+    top: -90px;
+    left: 6px;
+    font-size: 12px;
+    color: $main-color;
+}
+
+.Sign-in {
+    position: relative;
+    margin: 45px 0;
+    color: $main-color;
+    padding-left: 4%;
+    padding-top: 4%;
+
+
+    .form-input-email {
+        background: none;
+        background-color: white;
+        color: $sub-color;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 30%;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid $sub-color;
+        margin: 25px 0;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:focus~.Label-email {
+            @include shrinkLabel();
+        }
+    }
+
+    .form-input-password {
+        background: none;
+        background-color: white;
+        color: $sub-color;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 30%;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid $sub-color;
+        margin: 25px 0;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:focus~.Label-password {
+            @include shrinkLabel();
+        }
+
+
+    }
+
+    input[type='password'] {
+        letter-spacing: 0.3em;
+    }
+
+    .Label-email {
+        color: $sub-color;
+        font-size: 16px;
+        font-weight: normal;
+        position: relative;
+        pointer-events: none;
+        left: 10px;
+        top: -50px;
+        transition: 300ms ease all;
+
+
+    }
+
+    .shrinkLabel-email {
+        color: $sub-color;
+        font-size: 16px;
+        font-weight: normal;
+        position: relative;
+        pointer-events: none;
+        left: 10px;
+        top: -60px;
+        transition: 300ms ease all;
+
+        @include shrinkLabel();
+
+    }
+
+
+
+
+
+
+
+
+    .Label-password {
+        color: $sub-color;
+        font-size: 16px;
+        font-weight: normal;
+        position: relative;
+        pointer-events: none;
+        left: 10px;
+        top: -50px;
+        transition: 300ms ease all;
+
+
+    }
+
+
+    .shrinkLabel-password {
+        color: $sub-color;
+        font-size: 16px;
+        font-weight: normal;
+        position: relative;
+        pointer-events: none;
+        left: 10px;
+        top: -60px;
+        transition: 300ms ease all;
+        @include shrinkLabel();
+
+
+    }
+
+
+
+}
