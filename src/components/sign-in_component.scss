@@ -113,4 +113,33 @@ $main-color: black;
         transition: 300ms ease all;
         @include shrinkLabel();
     }
+
+
+    .custom-button_google-sign-in {
+        min-width: 100px;
+        width: auto;
+        height: 45px;
+        letter-spacing: 0.5px;
+        line-height: 50px;
+        padding: 0 35px 0 35px;
+        font-size: 15px;
+
+        text-transform: uppercase;
+        font-family: 'Open Sans Condensed';
+        font-weight: bolder;
+        border: none;
+        cursor: pointer;
+        margin-right: 1vw;
+
+
+
+        background-color: #4285f4;
+        color: white;
+
+        &:hover {
+            background-color: #357ae8;
+            border: none;
+        }
+
+    }
 }
