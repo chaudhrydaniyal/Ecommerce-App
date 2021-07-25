@@ -1,0 +1,12 @@
+.options {
+    display: flex;
+    column-gap: 2vw;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 3vh 8vw;
+
+    .option {
+        font-size: 30px;
+        color: black;
+    }
+}

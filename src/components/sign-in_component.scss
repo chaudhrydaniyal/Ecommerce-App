@@ -58,8 +58,6 @@ $main-color: black;
         &:focus~.Label-password {
             @include shrinkLabel();
         }
-
-
     }
 
     input[type='password'] {
@@ -75,8 +73,6 @@ $main-color: black;
         left: 10px;
         top: -50px;
         transition: 300ms ease all;
-
-
     }
 
     .shrinkLabel-email {
@@ -94,12 +90,6 @@ $main-color: black;
     }
 
 
-
-
-
-
-
-
     .Label-password {
         color: $sub-color;
         font-size: 16px;
@@ -109,8 +99,6 @@ $main-color: black;
         left: 10px;
         top: -50px;
         transition: 300ms ease all;
-
-
     }
 
 
@@ -124,10 +112,5 @@ $main-color: black;
         top: -60px;
         transition: 300ms ease all;
         @include shrinkLabel();
-
-
     }
-
-
-
 }

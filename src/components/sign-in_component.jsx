@@ -1,6 +1,8 @@
 import React from 'react';
 import './sign-in_component.scss'
 import CustomButton from './custom-button'
+import { signInWithGoogle } from '../firebase/firebase.utils';
+
 class SignIn extends React.Component {
 
     constructor() {
@@ -41,6 +43,8 @@ class SignIn extends React.Component {
                     <label className={`${(this.state.password)?'shrink':''}Label-password`}>Password</label>
                     <br></br>
                     <CustomButton type='submit'>Submit Form</CustomButton>
+                    <CustomButton onClick={signInWithGoogle} isGoogleSignIn>Sign In with Google</CustomButton>
+
                 </form>
 
 
