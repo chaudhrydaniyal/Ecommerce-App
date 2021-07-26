@@ -1,13 +1,15 @@
 .options {
     display: flex;
-    column-gap: 2vw;
+    column-gap: 3vw;
     align-items: center;
     justify-content: flex-end;
     margin: 3vh 8vw;
 
     .option {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 30px;
-        color: black;
+        font-weight: bold;
+        color:dimgray;
         cursor: pointer;
     }
 }

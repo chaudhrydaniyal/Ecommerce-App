@@ -11,14 +11,14 @@ const Header = ({ currentUser }) => (
 
     <div className="header">
         <div className="options">
-            <Link className="option" to="/">
+            <Link className="option" to="/" style={{ textDecoration: 'none' }}> 
                 Shop
             </Link>
-            <Link className="option" to="/collection/hats">
+            <Link className="option" to="/collection/hats" style={{ textDecoration: 'none' }}>
                 Contact
 
             </Link>
-            {currentUser? (<div className="option" onClick={() => auth.signOut()}>Sign Out</div> ): (<Link className="option" to="/signin" > Sign In</Link>)}
+            {currentUser? (<div className="option" onClick={() => auth.signOut()}>Sign out</div> ): (<Link className="option" to="/signin" style={{ textDecoration: 'none' }} > Sign in</Link>)}
 
         </div>
 

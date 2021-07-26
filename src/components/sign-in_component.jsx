@@ -43,7 +43,7 @@ class SignIn extends React.Component {
                     <label className={`${(this.state.password)?'shrink':''}Label-password`}>Password</label>
                     <br></br>
                     <CustomButton type='submit'>Submit Form</CustomButton>
-                    <button className='custom-button_google-sign-in' onClick={signInWithGoogle} isGoogleSignIn>Sign In with Google</button>
+                    <button type='button' className='custom-button_google-sign-in' onClick={signInWithGoogle} isGoogleSignIn>Sign In with Google</button>
 
                 </form>
                 
