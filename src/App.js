@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom';
 import Collection from './pages/collection';
 import Header from './components/header-component';
 import SignInAndSignUp from './pages/sign-in_sign-up';
-import {auth} from './firebase/firebase.utils'
+import {auth, createUserProfileDocument} from './firebase/firebase.utils'
 import reactDom from 'react-dom';
 
 class App extends React.Component {
@@ -24,6 +24,8 @@ class App extends React.Component {
         this.setState({
           currentUser: user
         })
+
+        const userRef= createUserProfileDocument(user);
       })
     }
 
