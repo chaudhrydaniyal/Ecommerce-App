@@ -2,18 +2,40 @@ $sub-color: grey;
 $main-color: black;
 
 @mixin shrinkLabel {
-    top: -90px;
+    top: -80px;
     left: 6px;
     font-size: 12px;
     color: $main-color;
 }
 
-.Sign-in {
+.Sign-up {
     position: relative;
-    margin: 45px 0;
+    margin: 10px 0;
     color: $main-color;
     padding-left: 4%;
     padding-top: 4%;
+
+    .form-input-displayName {
+        background: none;
+        background-color: white;
+        color: $sub-color;
+        font-size: 18px;
+        padding: 0px 10px 0px 5px;
+        display: block;
+        width: 30vw;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid $sub-color;
+        margin: 25px 0;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:focus~.Label-displayName {
+            @include shrinkLabel();
+        }
+    }
 
 
     .form-input-email {
@@ -21,7 +43,7 @@ $main-color: black;
         background-color: white;
         color: $sub-color;
         font-size: 18px;
-        padding: 10px 10px 10px 5px;
+        padding: 0px 10px 0px 5px;
         display: block;
         width: 30vw;
         border: none;
@@ -43,7 +65,7 @@ $main-color: black;
         background-color: white;
         color: $sub-color;
         font-size: 18px;
-        padding: 10px 10px 10px 5px;
+        padding: 0px 10px 0px 5px;
         display: block;
         width: 30vw;
         border: none;
@@ -60,9 +82,59 @@ $main-color: black;
         }
     }
 
+    .form-input-confirmPassword {
+        background: none;
+        background-color: white;
+        color: $sub-color;
+        font-size: 18px;
+        padding: 0px 10px 0px 5px;
+        display: block;
+        width: 30vw;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid $sub-color;
+        margin: 25px 0;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:focus~.Label-confirmPassword {
+            @include shrinkLabel();
+        }
+    }
+
     input[type='password'] {
         letter-spacing: 0.3em;
     }
+
+
+
+    .Label-displayName {
+        color: $sub-color;
+        font-size: 16px;
+        font-weight: normal;
+        position: relative;
+        pointer-events: none;
+        left: 10px;
+        top: -50px;
+        transition: 300ms ease all;
+    }
+
+    .shrinkLabel-displayName {
+        color: $sub-color;
+        font-size: 16px;
+        font-weight: normal;
+        position: relative;
+        pointer-events: none;
+        left: 10px;
+        top: -60px;
+        transition: 300ms ease all;
+
+        @include shrinkLabel();
+
+    }
+
 
     .Label-email {
         color: $sub-color;
@@ -113,6 +185,36 @@ $main-color: black;
         transition: 300ms ease all;
         @include shrinkLabel();
     }
+
+
+    .Label-confirmPassword {
+        color: $sub-color;
+        font-size: 16px;
+        font-weight: normal;
+        position: relative;
+        pointer-events: none;
+        left: 10px;
+        top: -50px;
+        transition: 300ms ease all;
+    }
+
+    .shrinkLabel-confirmPassword{
+        color: $sub-color;
+        font-size: 16px;
+        font-weight: normal;
+        position: relative;
+        pointer-events: none;
+        left: 10px;
+        top: -60px;
+        transition: 300ms ease all;
+
+        @include shrinkLabel();
+
+    }
+
+
+
+
 
 
     .custom-button_google-sign-in {
