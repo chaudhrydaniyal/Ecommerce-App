@@ -130,13 +130,19 @@
   
 
   
+&nbsp;  
+&nbsp;  
+A complete E-commerce App with Front End built using 'React'. It has been integrated with 'Firebase' which provides features like authenticating user by Google sign-in as well as new user registration sign up. 
+&nbsp;  
+&nbsp;  
 
-A complete E-commerce App with Front End built using 'React'. It has been integrated with 'Firebase' which provides features like authenticating user by Google sign-in as well as new user registration sign up.
+
+
 
 
 ![Sign in page screenshot](/signin-page.png)
 
-<figcaption align = "center"><b>Sign In Page</b></figcaption>
+<figcaption align = "center"><b><c>Sign In Page</c></b></figcaption>
 
   
 
@@ -349,4 +355,4 @@ Chaudhry Daniyal Khalid - daniyalkhalid@yahoo.com
 
   
 
-Project Link: [https://github.com/daniyal-khalid/Full-Stack_Web-Scraping_App](https://github.com/daniyal-khalid/Full-Stack_Web-Scraping_App)
+Project Link: [https://github.com/daniyal-khalid/Ecommerce-App](https://github.com/daniyal-khalid/Ecommerce-App)
