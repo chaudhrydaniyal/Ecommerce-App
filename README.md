@@ -252,7 +252,7 @@ To get a local copy up and running follow these simple steps.
 
   
 
-git clone https://github.com/daniyal-khalid/Full-Stack_Web-Scraping_App.git
+git clone https://github.com/daniyal-khalid/Ecommerce-App.git
 
   
 
