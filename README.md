@@ -35,7 +35,7 @@
 
   
 
-<a  href="#about-the-project">About The Project</a>
+<li> <a  href="#about-the-project">About The Project</a>
 
   
 
@@ -59,7 +59,7 @@
 
   
 
-<a  href="#getting-started">Getting Started</a>
+<li> <a  href="#getting-started">Getting Started</a>
 
   
 
@@ -130,19 +130,20 @@
   
 
   
+ 
 &nbsp;  
-&nbsp;  
+&nbsp; 
+
 A complete E-commerce App with Front End built using 'React'. It has been integrated with 'Firebase' which provides features like authenticating user by Google sign-in as well as new user registration sign up. 
 &nbsp;  
 &nbsp;  
 
 
 
-
+## Sign In Page
 
 ![Sign in page screenshot](/signin-page.png)
 
-<figcaption align = "center"><b><c>Sign In Page</c></b></figcaption>
 
   
 
