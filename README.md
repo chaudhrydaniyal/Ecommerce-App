@@ -3,35 +3,47 @@
 
   
 
+  
+
 <h1  align=center> Ecommerce-App </h1>
 
   
+
   
 
 <!-- TABLE OF CONTENTS -->
 
   
 
+  
+
 <details  open="open">
 
   
-  
+
   
 
 **<summary>Table of Contents</summary>**
 
   
 
+  
+
 <ol>
 
   
+
   
 
 <a  href="#about-the-project">About The Project</a>
 
   
 
+  
+
 <ul>
+
+  
 
   
 
@@ -39,13 +51,17 @@
 
   
 
+  
+
 </ul>
 
   
-  
+
   
 
 <a  href="#getting-started">Getting Started</a>
+
+  
 
   
 
@@ -53,28 +69,37 @@
 
   
 
+  
+
 <li><a  href="#prerequisites">Prerequisites</a></li>
+
+  
 
   
 
 <li><a  href="#installation">Installation</a></li>
 
   
-  
-  
-  
+
   
 
 <li><a  href="#usage">Usage</a></li>
 
+  
+
 <li><a  href="#contact">Contact</a></li>
 
   
+
   
 
 </ul>
 
+  
+
 </ol>
+
+  
 
   
 
@@ -84,7 +109,11 @@
 
   
 
+  
+
 <!-- ABOUT THE PROJECT -->
+
+  
 
   
 
@@ -92,17 +121,28 @@
 
   
 
+  
+
 ![project-screenshot](/project-screenshot.png)
 
   
+
   
 
   
 
 A complete E-commerce App with Front End built using 'React'. It has been integrated with 'Firebase' which provides features like authenticating user by Google sign-in as well as new user registration sign up.
+
+
+![Sign in page screenshot](/signin-page.png)
+
+<figcaption align = "center"><b>Sign In Page</b></figcaption>
+
   
 
 ### Built With
+
+  
 
   
 
@@ -112,7 +152,11 @@ Following are the major libraries, database and APIs used to built this project:
 
   
 
+  
+
 *  [React](https://reactjs.org/)
+
+  
 
   
 
@@ -120,9 +164,14 @@ Following are the major libraries, database and APIs used to built this project:
 
   
 
+  
+
 *  [Stripe](https://stripe.com/)
+
 *  [Firebase](https://firebase.google.com/)
 
+  
+  
 
   
 
@@ -132,14 +181,19 @@ Following are the major libraries, database and APIs used to built this project:
 
   
 
+  
+
 ## Getting Started
 
   
 
   
+
   
 
 To get a local copy up and running follow these simple steps.
+
+  
 
   
 
@@ -150,9 +204,12 @@ To get a local copy up and running follow these simple steps.
   
 
   
+
   
 
 * Node
+
+  
 
   
 
@@ -160,7 +217,9 @@ To get a local copy up and running follow these simple steps.
 
   
 
-
+  
+  
+  
 
   
 
@@ -172,11 +231,17 @@ To get a local copy up and running follow these simple steps.
 
   
 
+  
+
 1. Clone the repo
 
   
 
+  
+
 ```sh
+
+  
 
   
 
@@ -184,7 +249,11 @@ git clone https://github.com/daniyal-khalid/Full-Stack_Web-Scraping_App.git
 
   
 
+  
+
 ```
+
+  
 
   
 
@@ -192,7 +261,11 @@ git clone https://github.com/daniyal-khalid/Full-Stack_Web-Scraping_App.git
 
   
 
+  
+
 ```sh
+
+  
 
   
 
@@ -200,13 +273,19 @@ npm install
 
   
 
+  
+
 ```
 
   
 
-
+  
+  
+  
 
 3. Run the project
+
+  
 
   
 
@@ -214,18 +293,25 @@ npm install
 
   
 
+  
+
 npm start
+
+  
 
   
 
 ```
 
   
+
   
 
   
 
 <!-- USAGE EXAMPLES -->
+
+  
 
   
 
@@ -235,9 +321,15 @@ npm start
 
   
 
-This App is a prototype of a comprehensive Ecommerce website having content management capabilities, easy-to-use checkout, sign-up and sign-in functionality  and, online payment option using Stripe.  
+  
+
+This App is a prototype of a comprehensive Ecommerce website having content management capabilities, easy-to-use checkout, sign-up and sign-in functionality and, online payment option using Stripe.
+
+  
 
 <!-- CONTACT -->
+
+  
 
   
 
@@ -247,7 +339,11 @@ This App is a prototype of a comprehensive Ecommerce website having content mana
 
   
 
+  
+
 Chaudhry Daniyal Khalid - daniyalkhalid@yahoo.com
+
+  
 
   
 
