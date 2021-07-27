@@ -22,7 +22,7 @@ provider.setCustomParameters({
     'prompt': 'select_account'
 });
 
-export const createUserProfileDocument = async (user) => {
+export const createUserProfileDocument = async (user, additionalData) => {
 
     if (!user) return;
 
