@@ -35,7 +35,7 @@
 
   
 
-<a  href="#about-the-project">About The Project</a>
+<li> <a  href="#about-the-project">About The Project</a>
 
   
 
@@ -59,7 +59,7 @@
 
   
 
-<a  href="#getting-started">Getting Started</a>
+<li> <a  href="#getting-started">Getting Started</a>
 
   
 
@@ -130,13 +130,20 @@
   
 
   
+ 
+&nbsp;  
+&nbsp; 
 
-A complete E-commerce App with Front End built using 'React'. It has been integrated with 'Firebase' which provides features like authenticating user by Google sign-in as well as new user registration sign up.
+A complete E-commerce App with Front End built using 'React'. It has been integrated with 'Firebase' which provides features like authenticating user by Google sign-in as well as new user registration sign up. 
+&nbsp;  
+&nbsp;  
 
+
+
+## Sign In Page
 
 ![Sign in page screenshot](/signin-page.png)
 
-<figcaption align = "center"><b>Sign In Page</b></figcaption>
 
   
 
@@ -245,7 +252,7 @@ To get a local copy up and running follow these simple steps.
 
   
 
-git clone https://github.com/daniyal-khalid/Full-Stack_Web-Scraping_App.git
+git clone https://github.com/daniyal-khalid/Ecommerce-App.git
 
   
 
@@ -349,4 +356,4 @@ Chaudhry Daniyal Khalid - daniyalkhalid@yahoo.com
 
   
 
-Project Link: [https://github.com/daniyal-khalid/Full-Stack_Web-Scraping_App](https://github.com/daniyal-khalid/Full-Stack_Web-Scraping_App)
+Project Link: [https://github.com/daniyal-khalid/Ecommerce-App](https://github.com/daniyal-khalid/Ecommerce-App)

@@ -36,7 +36,7 @@ class App extends React.Component {
   render(){
   return (
     <div class="App">
-      <Header currentUser={this.state.currentUser}></Header>
+      <Header ></Header>
       <Route exact path='/' component={Homepage} />
       <Route exact path='/collection/:title' component={Collection} />
       <Route exact path='/signin' component={SignInAndSignUp} />
