@@ -122,6 +122,9 @@
   
 A complete E-commerce App with Front End built using 'React'. It has been integrated with 'Firebase' which provides features like authenticating user by Google sign-in as well as new user registration sign up. 
   
+   
+&nbsp;  
+&nbsp; 
 
 ![project-screenshot](/project-screenshot.png)
 
@@ -130,9 +133,7 @@ A complete E-commerce App with Front End built using 'React'. It has been integr
   
 
   
- 
-&nbsp;  
-&nbsp; 
+
 
 
 &nbsp;  
