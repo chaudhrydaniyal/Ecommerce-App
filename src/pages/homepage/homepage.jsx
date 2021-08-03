@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router';
-import Itemcontainer from '../components/item-container';
+import Itemcontainer from '../../components/item-container/item-container';
 import './homepage.scss'
 
 
@@ -50,7 +50,7 @@ class Homepage extends React.Component {
 
     return (
 
-      <div class="homepage">
+      <div className="homepage">
      
 
         {this.state.sections.map ((section) => ( <Itemcontainer  title= {section.title} url={section.url}></Itemcontainer>) )}

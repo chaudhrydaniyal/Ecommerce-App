@@ -1,31 +1,27 @@
 import React from 'react';
-import Homepage from './pages/homepage';
+import Homepage from './pages/homepage/homepage';
 import { Route } from 'react-router-dom';
-import Collection from './pages/collection';
-import Header from './components/header-component';
-import SignInAndSignUp from './pages/sign-in_sign-up';
-import {auth, createUserProfileDocument} from './firebase/firebase.utils'
+import Collection from './pages/collection/collection';
+import Header from './components/header-component/header-component';
+import SignInAndSignUp from './pages/sign-in_sign-up/sign-in_sign-up';
+import {auth, createUserProfileDocument} from './firebase/firebase.utils';
+import { connect } from 'react-redux';
+import {setCurrentUser} from './redux/user/user-actions'
 import reactDom from 'react-dom';
 
 class App extends React.Component {
-    constructor() {
-      super();
-      this.state = {
-        currentUser: null
-      }
-    }
+
 
     
     unsubscribeFromAuth = null;
 
 
     componentDidMount() {
-      this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
-        this.setState({
-          currentUser: user
-        })
+      this.unsubscribeFromAuth = auth.onAuthStateChanged(async user => {
+        
+        this.props.setCurrentUser(user);
 
-        const userRef= createUserProfileDocument(user);
+        const userRef= await createUserProfileDocument(user);
       })
     }
 
@@ -35,7 +31,7 @@ class App extends React.Component {
 
   render(){
   return (
-    <div class="App">
+    <div className="App">
       <Header ></Header>
       <Route exact path='/' component={Homepage} />
       <Route exact path='/collection/:title' component={Collection} />
@@ -45,5 +41,9 @@ class App extends React.Component {
   )}
 }
 
-export default App;
+const mapDispatchToProps = dispatch =>({
+  setCurrentUser: user => dispatch(setCurrentUser(user))
+});
+
+export default connect (null, mapDispatchToProps) (App);
  
