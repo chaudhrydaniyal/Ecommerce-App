@@ -6,11 +6,11 @@ import { connect } from 'react-redux'
 
 
 
-const Cart= ({toggleCartHidden}) =>(
+const Cart= ({itemCount, toggleCartHidden}) =>(
 
     <div className= 'cart-icon-container' onClick={toggleCartHidden}>
         <CartIcon className= 'cart-icon'></CartIcon>
-        <span className= 'item-count'>0</span>
+        <span className= 'item-count'>{itemCount}</span>
     </div>
 
 )

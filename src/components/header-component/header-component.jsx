@@ -7,7 +7,7 @@ import Cart from '../cart-icon/cart-icon';
 import CartDropdown from '../cart-dropdown/cart-dropdown';
 
 
-const Header = ({ currentUser , hidden}) => (
+const Header = ({ currentUser , hidden, itemCount}) => (
     <div className="header">
         <div className="options">
             <Link className="option" to="/" style={{ textDecoration: 'none' }}> 
@@ -17,7 +17,7 @@ const Header = ({ currentUser , hidden}) => (
                 Contact
             </Link>
             {currentUser? (<div className="option" onClick={() => auth.signOut()}>Sign out</div> ): (<Link className="option" to="/signin" style={{ textDecoration: 'none' }} > Sign in  </Link>)}
-            <Cart></Cart>
+            <Cart itemCount={itemCount}></Cart>
         </div>
         {(hidden)? '' : <CartDropdown></CartDropdown> }
         
@@ -27,7 +27,8 @@ const Header = ({ currentUser , hidden}) => (
 
 const mapStateToProps = (state) =>({
     currentUser : state.user.currentUser,
-    hidden: state.cart.hidden
+    hidden: state.cart.hidden,
+    itemCount: state.cart.cartItems.reduce((accumalatedQuantity, cartItem)=> accumalatedQuantity+cartItem.quantity, 0)
 })
 
 

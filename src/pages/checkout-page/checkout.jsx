@@ -3,7 +3,7 @@ import './checkout.scss';
 import { connect } from 'react-redux';
 import CheckoutItem from '../../components/checkout-item/checkout-item';
 
-const CheckoutPage = ({cartItems}) => {
+const CheckoutPage = ({cartItems, total}) => {
 return (
 <div className='checkout-page'>
     <div className='checkout-header'>
@@ -24,13 +24,15 @@ return (
         </div>
     </div>
     {cartItems.map(cartItem=> (<CheckoutItem cartItem={cartItem}></CheckoutItem>))}
+    <div className='total'>Total: ${total}</div>
 </div>
 )
 }
 
 const mapStateToProps = (state) =>({
 
-    cartItems: state.cart.cartItems
+    cartItems: state.cart.cartItems,
+    total: state.cart.cartItems.reduce((accumalatedQuantity, cartItem)=>accumalatedQuantity + (cartItem.price*cartItem.quantity), 0)
 
 })
 

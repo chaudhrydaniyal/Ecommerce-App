@@ -1,3 +1,4 @@
+
 .collections {
   display: flex;
   margin-top: 4vh;
@@ -8,7 +9,9 @@
   background-color: white;
   row-gap: 4vw;
   column-gap: 4vw;
-
+.collection-item{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size:x-large;
 
   .collection-background-image {
     opacity: 100%;
@@ -22,5 +25,18 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
+
+
+    &:hover{
+      .custom-button{
+        opacity:80%;
+      }
+    }
+
   }
-}
+
+  .custom-button{
+    opacity:0%;
+  }
+
+}}
