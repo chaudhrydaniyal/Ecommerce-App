@@ -13,7 +13,7 @@ const Header = ({ currentUser , hidden, itemCount}) => (
             <Link className="option" to="/" style={{ textDecoration: 'none' }}> 
                 Shop
             </Link>
-            <Link className="option" to="/collection/hats" style={{ textDecoration: 'none' }}>
+            <Link className="option" to="/Contact" style={{ textDecoration: 'none' }}>
                 Contact
             </Link>
             {currentUser? (<div className="option" onClick={() => auth.signOut()}>Sign out</div> ): (<Link className="option" to="/signin" style={{ textDecoration: 'none' }} > Sign in  </Link>)}

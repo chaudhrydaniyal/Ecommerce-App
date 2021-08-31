@@ -9,6 +9,7 @@ import {auth, createUserProfileDocument} from './firebase/firebase.utils';
 import { connect } from 'react-redux';
 import {setCurrentUser} from './redux/user/user-actions'
 import reactDom from 'react-dom';
+import Contact from './pages/contact/contact';
 
 class App extends React.Component {
   
@@ -39,6 +40,8 @@ class App extends React.Component {
       <Route exact path='/collection/:title' component={Collection} />
       <Route exact path='/signin' component={SignInAndSignUp} />
       <Route exact path='/checkout' component={CheckoutPage} />
+      <Route exact path='/Contact' component={Contact} />
+
 
       
     </div>
