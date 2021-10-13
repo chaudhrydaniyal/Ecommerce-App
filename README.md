@@ -7,7 +7,12 @@
 
 <h1  align=center> Ecommerce-App </h1>
 
-  
+<br>
+
+
+<h3 align="center">Live Version: <a href= "https://ecommerce-app54.herokuapp.com"> https://ecommerce-app54.herokuapp.com </a> </h3>
+
+<br>  
 
   
 
