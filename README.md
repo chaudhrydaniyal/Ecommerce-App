@@ -10,7 +10,7 @@
 <br>
 
 
-<h3 align="center">Live Version: <a href= "https://ecommerce-app54.herokuapp.com"> https://ecommerce-app54.herokuapp.com </a> </h3>
+<h3 align="center">Live Version: <a href= "https://ecommerce-app-brown-eta.vercel.app/"> https://ecommerce-app-brown-eta.vercel.app/ </a> </h3>
 
 <br>  
 
